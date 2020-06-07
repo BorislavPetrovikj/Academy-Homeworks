@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+}
+
+/*Part1*/
+
+* {
+  box-sizing: border-box;
+}
+
+.child {
+  background-color: #648dac;
+}
+
+.f-left {
+  font-size: 51px;
+  color: #dbdbdb;
+  float: left;
+ 
+}
+.f-right {
+  float: right;
+  list-style-type: none;
+ 
+
+}
+.center {
+  margin: auto;
+  width: 701px;
+  padding-bottom: 22px;
+}
+
+.clear {
+  clear: both;
+}
+
+ul.inline li {
+  display: inline;
+  color: #dbdbdb;
+}
+
+.parent {
+  background-color: #648dac;
+  width: 60%; margin: 0 auto;
+}
+.list {
+  font-family: "Lato", sans-serif;
+  padding: 7px;
+}
+
+a {
+  color: #dbdbdb;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(238, 236, 148);
+  text-decoration: underline;
+}
+
+i:hover {
+  color: rgb(238, 236, 148);
+  transform: scale(1.5);
+}
+.color{
+  background-color:#648dac ;
+}
+/*Part2*/
+
+.child1 {
+  width: 25%;
+  background-color: #dbdbdb;
+}
+.f-left1 {
+  text-align: center;
+  float: left;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+.child2 {
+  width: 25%;
+  background-color: #bdb9ab;
+}
+
+.child3 {
+  width: 25%;
+  background-color: #9ce0d2;
+}
+
+.child4 {
+  width: 25%;
+  background-color: #9faec1;
+}
+
+#inner {
+  font-size: 55px;
+  color: black;
+  padding: 35px;
+}
+.clear1 {
+  clear: both;
+}
+
+/*Part3*/
+
+.son {
+  width: 50%;
+  background-color: #bfd6df;
+}
+
+.f-left2 {
+  float: left;
+}
+
+.son2 {
+  width: 50%;
+  background-color: #9faec1;
+}
+
+.center-content {
+  margin: auto;
+  padding: 450x;
+}
+.text {
+  padding: 147px;
+}
+
+.clear {
+  clear: both;
+}
+
+.textwraper {
+  text-indent: 20px;
+  font-family: italic;
+  padding: 45px;
+  font-size: 19px;
+}
+
+/*Part4*/
+
+.son3 {
+  width: 50%;
+  background-color: #bdb9ab;
+}
+
+.f-left3 {
+  float: left;
+}
+
+.son4 {
+  width: 50%;
+  background-color: #bfd6df;
+}
+
+.Position1 {
+  height: 430px;
+  padding-left: 286px;
+  padding-bottom: 0px;
+}
+
+.clear {
+  clear: both;
+}
+/*Part5*/
+
+.f-left4 {
+  float: left;
+}
+
+.mackbook1 {
+  width: 50%;
+  background-color: #bfd6df;
+}
+
+.mackbook2 {
+  width: 50%;
+  background-color: #faa58a;
+}
+
+.Position2 {
+  height: 430px;
+  padding-left: 296px;
+}
+
+.clear {
+  clear: both;
+}
+
+/*Part6*/
+
+.f-left5 {
+  float: left;
+}
+
+.team {
+  width: 33.3333333333%;
+  background-color: #9faec1;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.sallary {
+  width: 33.3333333333%;
+  background-color: #bdb9ab;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.earnings {
+  width: 33.3333333333%;
+  background-color: #9ce0d2;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.captionwraper {
+  font-size: 24px;
+  padding-top: 26px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+.textwraper2 {
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+.textwraper-white {
+  color: white;
+  font-size: 20px;
+}
+
+/*Part7*/
+
+.parent7 {
+  background-color: #648dac;
+}
+.center-content {
+  width: fit-content;
+  margin: auto;
+  padding: 17px;
+}
+
+.f-left6 {
+  float: left;
+  margin: 60px;
+}
+
+.facebook {
+  font-size: 30px;
+  color: white;
+}
+
+hr {
+  margin: 0;
+}
+
+/*Part8*/
+
+.parent8 {
+  background-color: #57495a;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/*Part7*/
+.img-size {
+  margin: 20px;
+  height: 342px;
+}
+
+.caption {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 20px;
+}
