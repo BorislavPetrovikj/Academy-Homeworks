@@ -1,0 +1,240 @@
+body {
+  margin: 0 auto;
+  font-family: arial;
+}
+
+h1 {
+  color: #fff9ff;
+}
+
+a {
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+button {
+  background-color: #3b8fe1;
+  color: white;
+  padding: 10px 20px;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 7%;
+  margin-top: 10px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+hr {
+  margin-top: 35px;
+  width: 15%;
+  border: 1px solid #377bb9;
+}
+
+i {
+  font-size: 50px;
+  color: #3a8fe3;
+}
+
+.p-white {
+  color: white;
+}
+
+/*--------------------------------------------- */
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("Images/hero.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+
+.menu {
+  padding-top: 10px;
+}
+
+.menu-inner {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  padding-top: 10px;
+  font-size: 22px;
+}
+
+.menu-inner ul {
+  list-style-type: none;
+  display: flex;
+}
+.menu-inner ul li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*--------------------------------------------- */
+
+.images {
+  margin-bottom: 70px;
+}
+
+.text {
+  padding: 50px 0;
+  line-height: 35px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.image-wrapper {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+}
+.image-1 {
+  flex-basis: 40%;
+}
+
+.image-2 {
+  flex-basis: 60%;
+}
+
+.margin {
+  margin: 7px;
+}
+
+.bg-img {
+  background-size: cover;
+  height: 30vh;
+  background-position: center;
+}
+
+.backgorund-image {
+  background-image: url("Images/coast.jpg");
+}
+.backgorund-image-1 {
+  background-image: url("Images/island.jpg");
+}
+.backgorund-image-2 {
+  background-image: url("Images/balloon.jpg");
+}
+.backgorund-image-3 {
+  background-image: url("Images/mountain.jpg");
+}
+
+/*--------------------------------------------- */
+
+.sections {
+  background-color: #eeeeee;
+}
+.icon-section {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  line-height: 35px;
+}
+.baisis {
+  padding: 30px;
+  flex-basis: 33.33333%;
+}
+
+.input {
+  text-align: center;
+  padding-bottom: 60px;
+}
+input[type="email"] {
+  width: 500px;
+  padding: 9px;
+  border: 1px solid#808080;
+  color: #808080;
+}
+
+.content-editing p {
+  padding-bottom: 50px;
+}
+
+/*--------------------------------------------- */
+.footer {
+  background-color: #414a4f;
+  padding: 50px;
+}
+.icon-footer {
+  text-align: center;
+}
+
+.footer-text {
+  color: #fffefc;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.icon-footer i {
+  color: white;
+  padding: 5px;
+  font-size: 35px;
+}
+
+/*--------------------------------------------- */
+
+@media (max-width: 768px) {
+  .image-wrapper {
+    flex-direction: column;
+  }
+  .icon-section {
+    flex-direction: column;
+  }
+ 
+  #button-1 {
+    padding: 10px 82px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+  hr {
+    width: 55%;
+  }
+
+  button {
+    padding: 14px 35px;
+  }
+
+  input[type="email"] {
+    width: 300px;
+  }
+  #button-1 {
+    padding: 30px 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex none;
+  }
+  .menu-inner {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+}
