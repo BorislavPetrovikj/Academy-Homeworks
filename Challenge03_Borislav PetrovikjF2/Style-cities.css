@@ -1,0 +1,250 @@
+body {
+  margin: 0 auto;
+}
+h1 {
+  font-size: 40px;
+  color: rgba(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+p {
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255);
+}
+h4 {
+  font-size: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255);
+}
+
+.Image-backgorund {
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: lighten;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.Image-backgorund-1 {
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: lighten;
+  width: 100%;
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*----------------------------------------------------------------------   */
+
+.Section-1 {
+  background-image: url("image1.jpg");
+}
+
+/*----------------------------------------------------------------------   */
+
+.padding {
+  padding: 30px 100px;
+}
+#color-grey {
+  color: grey;
+}
+
+/*----------------------------------------------------------------------   */
+
+.Section-2 {
+  background-image: url("image2.jpg");
+}
+.Header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*----------------------------------------------------------------------   */
+
+.Section-3 {
+  background-image: url("image3.jpg");
+}
+
+.Text-section-1 {
+  background-color: black;
+  width: 100%;
+  position: relative;
+}
+
+/*----------------------------------------------------------------------   */
+
+.Section-4 {
+  background-image: url("image1.jpg");
+}
+.Black-header {
+  background-color: black;
+  padding: 0px 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Black-header-1 {
+  background-color: black;
+  padding: 0px 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*----------------------------------------------------------------------   */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+
+  .Black-header {
+    background-color: black;
+    left: 82%;
+  }
+
+  .Black-header-1 {
+    background-color: black;
+    left: 91%;
+  }
+
+  .Image-backgorund {
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-blend-mode: lighten;
+    width: 100%;
+    height: 100vh;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .Text-section-1 {
+    background-color: black;
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 10px;
+  }
+
+  .Black-header {
+    background-color: black;
+    left: 81%;
+  }
+
+  .Black-header-1 {
+    background-color: black;
+    left: 90%;
+  }
+}
+
+.Image-backgorund {
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: lighten;
+  width: 100%;
+  height: 100vh;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+
+  .Black-header {
+    background-color: black;
+    left: 72%;
+  }
+
+  .Black-header-1 {
+    background-color: black;
+    left: 85%;
+  }
+
+  .Image-backgorund {
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-blend-mode: lighten;
+    width: 100%;
+    height: 100vh;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .Text-section-1 {
+    background-color: black;
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .Black-header {
+    background-color: black;
+    left: 67%;
+  }
+
+  .Black-header-1 {
+    background-color: black;
+    left: 83%;
+  }
+
+  .Image-backgorund {
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-blend-mode: lighten;
+    width: 100%;
+    height: 100vh;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .Text-section-1 {
+    background-color: black;
+    width: 100%;
+  }
+}
