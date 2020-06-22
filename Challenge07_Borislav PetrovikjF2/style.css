@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+li {
+  color: rgb(163, 162, 162);
+  list-style-type: none;
+  line-height: 43px;
+}
+.col i {
+  font-size: 15px;
+  color: darkgray;
+}
+.navbar-inner li:hover {
+  color: grey;
+  cursor: pointer;
+}
+.logo img {
+  width: 70%;
+  margin-left: 35px;
+}
+
+.bg-blue:hover {
+  background-color: blue;
+}
+.bg-yeloww:hover {
+  background-color: yellow;
+}
+.bg-orange:hover {
+  background-color: orangered;
+}
+.bg-yeloww:hover {
+  background-color: yellow;
+}
+.bg-yeloww:hover {
+  background-color: yellow;
+}
+
+.hamburger {
+  display: none;
+}
+
+/*------------*/
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.nopadding:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.mg-top {
+  margin-top: 300px;
+}
+
+.hamburger i {
+  margin-top: 94px;
+  font-size: 38px;
+}
+
+.size {
+  font-size: 13px;
+}
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .navbar {
+    display: none !important;
+  }
+  .logo img {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .fixed {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
