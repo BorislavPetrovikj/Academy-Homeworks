@@ -1,0 +1,110 @@
+.carousel-caption {
+  top: 35%;
+  bottom: auto;
+}
+.carousel img {
+  max-height: 730px;
+  margin: 0 auto;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1 !important;
+}
+
+.borderleft {
+  border-left: 2px solid white;
+}
+.btn:focus {
+  box-shadow: none !important;
+}
+.bg-img {
+  background-image: url("Images/lights.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-img-2 {
+  background-image: url("Images/media.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-img-3 {
+  background-image: url("images/image1.jpg");
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar-toggler {
+  border: none !important;
+}
+.opacity {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control-next-icon {
+  width: 30px !important;
+  height: 30px !important;
+}
+.carousel-control-prev-icon {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.carousel-indicators li {
+  height: 8px !important;
+  border-radius: 40% !important;
+}
+.bordertop {
+  border-top: 1px solid black;
+}
+.bg-black {
+  background-color: black;
+}
+
+.icon-btn:focus {
+  outline: none !important;
+}
+.arrow {
+  width: auto !important;
+  bottom: auto !important;
+}
+
+/*--------*/
+
+.bg-red {
+  background-color: red;
+}
+
+/*--------*/
+
+a {
+  text-decoration: none !important;
+}
+.bg-colapse {
+  background-color: #212121;
+}
+
+.form-control {
+  width: 329% !important;
+}
+
+.border-top {
+  border-top: #000000 !important;
+}
+
+.margin {
+  margin-top: -90px;
+}
+
+@media screen and (max-width: 350px) {
+  .borderleft {
+    padding-left: 10px;
+  }
+}
