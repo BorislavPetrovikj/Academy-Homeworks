@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        function Cube(size) {
-            this.size = size;
-            this.CalculateVolume = function() {
-                volume = this.size * this.size * this.size;
-                console.log(volume);
-            };
-            this.CalculateArea = function() {
-                area = 6 * (this.size * this.size);
-                console.log(area);
-            };
-        }
-        let num = prompt("Enter size");
-        let Cube1 = new Cube(num);
-        Cube1.CalculateVolume();
-        Cube1.CalculateArea();
+      function Cube(size) {
+        this.size = size;
+        this.CalculateVolume = function () {
+          volume = this.size * this.size * this.size;
+          console.log(` Volume: ${volume} `);
+        };
+        this.CalculateArea = function () {
+          area = 6 * (this.size * this.size);
+          console.log(` Area: ${area}`);
+        };
+      }
+      let num = prompt("Enter size");
+      let Cube1 = new Cube(num);
+      Cube1.CalculateVolume();
+      Cube1.CalculateArea();
     </script>
-</body>
+  </body>
 </html>
