@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let From = prompt("This message is From");
+      let To = prompt("This message is To");
+      let Subject = prompt("Enter the Subject");
+      let Message = prompt("Write your Message");
+
+      class Email {
+        constructor(From, To, Subject, Message) {
+          this.From = From;
+          this.To = To;
+          this.Subject = Subject;
+          this.Message = Message;
+        }
+        alertMethod() {
+          alert(
+            `The message is From: ${this.From} To: ${this.To} The Subject is:  ${this.Subject} The message is: ${this.Message}`
+          );
+        }
+      }
+
+      let Email1 = new Email(From, To, Subject, Message);
+      console.log(Email1.alertMethod());
+    </script>
+  </body>
+</html>
