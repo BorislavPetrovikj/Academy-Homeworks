@@ -46,7 +46,7 @@
           title: "  The Hobbit",
           author: "by J.R.R Tolken",
           maxPages: 900,
-          onPage: 900,
+          onPage: 450,
         },
         {
           title: " Harry Potter",
@@ -91,12 +91,13 @@
           li.innerHTML += `'You still need to read ${el.title} ${el.author}`;
         }
       });
+      var myBarElementCollection;
+      var percentageArray = [];
 
-      arr.forEach((el, i) => {
-        let percentage = Math.floor((el.onPage * 100) / el.maxPages);
-
+        function GetElements(arr) {
+        arr.forEach((el) => {
+        var percentage = Math.floor((el.onPage * 100) / el.maxPages);
         tBody.innerHTML += `<tr><th>Title</th>
-          
           <th>Author</th>
           <th>Max Pages</th>
           <th>On page</th>
@@ -105,12 +106,23 @@
            <td>${el.author}</td>
            <td>${el.maxPages}</td>
            <td>${el.onPage}</td>
-           <div id="myProgress">
-            <td id="myBar">${percentage}%</td>
+           <div class="myProgress">
+           <div class="myBar">${percentage}%</div>
            </div>
            </tr>`;
+           myBarElementCollection = document.getElementsByClassName('myBar');
+           percentageArray.push(percentage)
+           
       });
-
+        return myBarElementCollection;
+      };
+      
+      let elements = GetElements(arr);
+      var i = 0;
+      for(let el of elements){
+         el.style.width = `${percentageArray[i]}%`;
+         i++;
+      }
       btn.addEventListener("click", function (e) {
         e.preventDefault();
         let nameVal1 = input1.value;
@@ -124,14 +136,22 @@
           <th>Author</th>
           <th>Max Pages</th>
           <th>On page</th>
-          <th>Progress</th></tr><tr><td>${nameVal1}</td>
+          <th>Progress</th></tr>
+          <tr>
+          <td>${nameVal1}</td>
           <td>${nameVal2}</td>
           <td>${nameVal3}</td>
           <td>${nameVal4}</td>
-          <div id="myProgress">
-          <td id="myBar">${percentage}%</td>
+          <div class="myProgress">
+          <div class="myBar">${percentage}%</div>
           </div>
           </tr>`;
+          let myBar = document.getElementsByClassName('myBar');
+          percentageArray.push(percentage);
+          for(let el of elements){
+          el.style.width = `${percentageArray[i]}%`;
+          i++;
+      }
       });
     </script>
   </body>
