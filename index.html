@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      let ul = document.createElement("ul");
+      document.body.appendChild(ul);
+
+      let table = document.createElement("table");
+      document.body.appendChild(table);
+      let tBody = document.createElement("tbody");
+      table.appendChild(tBody);
+      let form = document.createElement("form");
+      document.body.appendChild(form);
+      let input1 = document.createElement("input");
+      form.appendChild(input1);
+      input1.setAttribute("id", "input1");
+      input1.setAttribute("placeholder", "BookTitle");
+      let input2 = document.createElement("input");
+      form.appendChild(input2);
+      input2.setAttribute("id", "Input2");
+      input2.setAttribute("placeholder", "BookАuthor");
+      let input3 = document.createElement("input");
+      form.appendChild(input3);
+      input3.setAttribute("id", "Input3");
+      input3.setAttribute("placeholder", "Current page on...");
+      let input4 = document.createElement("input");
+      form.appendChild(input4);
+      input4.setAttribute("id", "Input4");
+      input4.setAttribute("placeholder", "Book max pages...");
+      let btn = document.createElement("button");
+      form.appendChild(btn);
+      btn.innerText = "Add to list";
+
+      let arr = [
+        {
+          title: "  The Hobbit",
+          author: "by J.R.R Tolken",
+          maxPages: 900,
+          onPage: 900,
+        },
+        {
+          title: " Harry Potter",
+          author: "by J.K Rowling",
+          maxPages: 1200,
+          onPage: 400,
+        },
+        {
+          title: "50 Shades of Grey",
+          author: "E.L.James",
+          maxPages: 250,
+          onPage: 250,
+        },
+        {
+          title: "Don Quixote",
+          author: "by Miguel de Cervantes",
+          maxPages: 250,
+          onPage: 90,
+        },
+        {
+          title: "Hamlet",
+          author: "by William Shakspere",
+          maxPages: 500,
+          onPage: 185,
+        },
+      ];
+
+      arr.forEach((el, i) => {
+        let li = document.createElement("li");
+        ul.appendChild(li);
+        li.innerHTML += `${el.title} ${el.author}`;
+      });
+
+      arr.forEach((el, i) => {
+        let li = document.createElement("li");
+        ul.appendChild(li);
+        if (el.maxPages === el.onPage) {
+          li.style.color = "green";
+          li.innerHTML += `You Alredy read ${el.title} ${el.author}`;
+        } else {
+          li.style.color = "red";
+          li.innerHTML += `'You still need to read ${el.title} ${el.author}`;
+        }
+      });
+
+      arr.forEach((el, i) => {
+        let percentage = Math.floor((el.onPage * 100) / el.maxPages);
+
+        tBody.innerHTML += `<tr><th>Title</th>
+          
+          <th>Author</th>
+          <th>Max Pages</th>
+          <th>On page</th>
+          <th>Progress</th></tr>
+          <tr><td>${el.title}</td>
+           <td>${el.author}</td>
+           <td>${el.maxPages}</td>
+           <td>${el.onPage}</td>
+           <div id="myProgress">
+            
+           <td id="myBar">${percentage}%</td>
+           </div></tr>`;
+      });
+
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        let nameVal1 = input1.value;
+        let nameVal2 = input2.value;
+        let nameVal3 = input3.value;
+        let nameVal4 = input4.value;
+        let percentage = Math.floor((nameVal3 * 100) / nameVal4);
+
+        tBody.innerHTML += `<tr><th>Title</th>
+          <th>Author</th>
+          <th>Max Pages</th>
+          <th>On page</th>
+          <th>Progress</th></tr><tr><td>${nameVal1}</td>
+          <td>${nameVal2}</td>
+          <td>${nameVal3}</td>
+          <td>${nameVal4}</td>
+          <td>${percentage}%</td></tr>`;
+      });
+    </script>
+  </body>
+</html>
