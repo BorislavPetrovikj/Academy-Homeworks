@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Challenge-14</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <script>
       let ul = document.createElement("ul");
       document.body.appendChild(ul);
-
+      let ul1 = document.createElement("ul");
+      document.body.appendChild(ul1);
       let table = document.createElement("table");
       document.body.appendChild(table);
       let tBody = document.createElement("tbody");
       table.appendChild(tBody);
+      let h1 = document.createElement("h1");
+      h1.innerText = "Add a book to the list:";
+      document.body.appendChild(h1);
       let form = document.createElement("form");
       document.body.appendChild(form);
       let input1 = document.createElement("input");
@@ -78,7 +82,7 @@
 
       arr.forEach((el, i) => {
         let li = document.createElement("li");
-        ul.appendChild(li);
+        ul1.appendChild(li);
         if (el.maxPages === el.onPage) {
           li.style.color = "green";
           li.innerHTML += `You Alredy read ${el.title} ${el.author}`;
@@ -102,9 +106,9 @@
            <td>${el.maxPages}</td>
            <td>${el.onPage}</td>
            <div id="myProgress">
-            
-           <td id="myBar">${percentage}%</td>
-           </div></tr>`;
+            <td id="myBar">${percentage}%</td>
+           </div>
+           </tr>`;
       });
 
       btn.addEventListener("click", function (e) {
@@ -114,6 +118,7 @@
         let nameVal3 = input3.value;
         let nameVal4 = input4.value;
         let percentage = Math.floor((nameVal3 * 100) / nameVal4);
+        var i = 0;
 
         tBody.innerHTML += `<tr><th>Title</th>
           <th>Author</th>
