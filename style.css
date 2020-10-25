@@ -1,11 +1,14 @@
-#myProgress {
-  width: 100%;
+.myProgress {
+  position: relative;
+  left:420px;
+  bottom:20px;
+  width: 50px;
+  border: 1px solid black;
   background-color: #ddd;
 }
 
-#myBar {
-  width: 10%;
-  height: 30px;
+.myBar {
+  border: 1px solid black;
   background-color: #4CAF50;
   text-align: center;
   line-height: 30px;
