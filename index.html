@@ -1,136 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- main css -->
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- google fonts -->
+    <title>Car racing game</title>
+    <meta name="keywords" content="html,css,lekcii" />
+    <meta name="description" content="ova e strana za ucenje" />
+    <meta name="author" content="Kristijan Bobevski" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Latest compiled and minified Bootstrap 4.4.1 CSS -->
     <link
-      href="https://fonts.googleapis.com/css?family=Courgette"
       rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
     />
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="css/all.css" />
-    <title>budget app</title>
-    <style></style>
+    <!-- Font-awesome 4.7 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
+  <body id="race">
+    <!-- write your code here -->
 
-  <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-11 mx-auto pt-3">
-          <!-- title -->
-          <h3 class="text-uppercase mb-4">budget app</h3>
-          <div class="row">
-            <div class="col-md-5 my-3">
-              <!-- budget feedback -->
-              <div class="budget-feedback alert alert-danger text-capitalize">
-                budget feedback
-              </div>
-              <!-- budget form -->
-              <form id="budget-form" class="budget-form">
-                <h5 class="text-capitalize">please enter your budget</h5>
-                <div class="form-group">
-                  <input
-                    type="number"
-                    class="form-control budget-inpu t"
-                    id="budget-input"
-                  />
-                </div>
-                <!-- submit button -->
-                <button
-                  type="submit"
-                  class="btn text-capitalize budget-submit"
-                  id="budget-submit"
-                >
-                  calculate
-                </button>
-              </form>
-            </div>
-            <div class="col-md-7">
-              <!-- app info -->
-              <div class="row my-3">
-                <div class="col-4 text-center mb-2">
-                  <h6 class="text-uppercase info-title">budget</h6>
-                  <span class="budget-icon"
-                    ><i class="fas fa-money-bill-alt"></i
-                  ></span>
-                  <h4 class="text-uppercase mt-2 budget" id="budget">
-                    <span>$ </span><span id="budget-amount">0</span>
-                  </h4>
-                </div>
-                <div class="col-4 text-center">
-                  <h6 class="text-uppercase info-title">expenses</h6>
-                  <span class="expense-icon"
-                    ><i class="far fa-credit-card"></i
-                  ></span>
-                  <h4 class="text-uppercase mt-2 expense" id="expense">
-                    <span>$ </span><span id="expense-amount">0</span>
-                  </h4>
-                </div>
-                <div class="col-4 text-center">
-                  <h6 class="text-uppercase info-title">balance</h6>
-                  <span class="balance-icon"
-                    ><i class="fas fa-dollar-sign"></i
-                  ></span>
-                  <h4 class="text-uppercase mt-2 balance" id="balance">
-                    <span>$ </span><span id="balance-amount">0</span>
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-5 my-3">
-              <!-- expense feedback -->
-              <div class="expense-feedback alert alert-danger text-capitalize">
-                expense feedback
-              </div>
-              <!-- expense form -->
-              <form id="expense-form" class="expense-form">
-                <h5 class="text-capitalize">please enter your expense</h5>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control expense-input"
-                    id="expense-input"
-                  />
-                </div>
-                <h5 class="text-capitalize">please enter expense amount</h5>
-                <div class="form-group">
-                  <input
-                    type="number"
-                    class="form-control expense-input"
-                    id="amount-input"
-                  />
-                </div>
-                <!-- submit button -->
-                <button
-                  type="submit"
-                  class="btn text-capitalize expense-submit"
-                  id="expense-submit"
-                >
-                  add expense
-                </button>
-              </form>
-            </div>
-            <div class="col-md-7 tbInner d-flex my-3"></div>
+        <div class="col">
+          <h1 class="mb-3 mt-3">Car racing game</h1>
+          <div class="buttons">
+            <button type="button" class="race">Race!</button>
+            <button type="button" class="startOver">Start over</button>
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col">
+          <img src="img/raceTrack.jpg" alt="RaceTrack" class="raceImg" />
+          <img src="img/car2.gif" alt="Car2" id="car" class="car1" />
+          <img src="img/car1.gif" alt="Car1" id="car1" class="car2" />
+          <img src="img/finish.gif" alt="Car1" class="finish" />
+          <p class="countDown" id="1">3</p>
+          <p class="countDown" id="2">2</p>
+          <p class="countDown" id="3">1</p>
+          <h2>Results</h2>
+          <h5 class="carText1">Car 1</h5>
+          <span class="table1"></span>
+          <h5 class="carText2">Car 2</h5>
+          <span class="table2"></span>
+        </div>
+      </div>
     </div>
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
-    <!-- jquery -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- script js -->
-    <script src="js/app.js"></script>
+    <script src="app.js"></script>
+
+    <!-- Latest Compiled Bootstrap 4.4.1 JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
