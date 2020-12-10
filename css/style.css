@@ -1,0 +1,89 @@
+body {
+  background-color: #e7e7e7;
+}
+h1,
+h3,
+h5 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none !important;
+  color: #232116 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000000 !important;
+  font-weight: bold !important;
+}
+.h1,
+h1 {
+  font-size: 3.5rem !important;
+}
+
+.thumbnail {
+  border: 1px solid #ddd !important;
+}
+.thumbnail img {
+  height: 280px;
+}
+.caption {
+  background-color: #ffa500;
+}
+.container-fluid {
+  width: 90%;
+}
+.ml-5,
+.mx-5 {
+  margin-left: 5rem !important;
+}
+.badge {
+  background-color: #d3d3d3;
+  color: #5c5c5c;
+  padding: 7px;
+  border-radius: 15px;
+}
+.footerBackgroundColor {
+  background-color: #f5eeee !important;
+}
+.icons {
+  content: "\f39e";
+  color: white;
+  background-color: orange;
+  padding: 12px 15px;
+  margin: 0px 4px;
+}
+.icons:hover {
+  background-color: grey;
+}
+
+.cardEffect:hover {
+  cursor: pointer !important;
+  transform: scale(1.01) !important;
+}
+.thumbnail:hover {
+  border-color: #ffa500 !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffa500 !important ;
+  background-color: #eeedef !important ;
+}
+
+.iconsHover:hover {
+  color: #ffa500 !important ;
+}
+.iconsHover {
+  color: #212529 !important;
+}
+p:hover {
+  cursor: pointer;
+  color: #ffa500 !important ;
+}
+span:hover {
+  cursor: pointer;
+  color: #ffa500 !important ;
+}
+
+/*use color:orange for the orange color*/
+/*use background-color: #d3d3d3; color: #5c5c5c; for the badges*/
+/*use color:grey for the social-share icons on hover*/

@@ -1,136 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- main css -->
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- google fonts -->
+    <title>Bikes</title>
+    <meta name="keywords" content="html,css,javaScript" />
+    <meta name="description" content="Bikes" />
+    <meta name="author" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Latest compiled and minified BOOTSTRAP CSS -->
     <link
-      href="https://fonts.googleapis.com/css?family=Courgette"
       rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
     />
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="css/all.css" />
-    <title>budget app</title>
-    <style></style>
-  </head>
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+    <!-- Font-awesome 5 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
   <body>
-    <div class="container-fluid">
+    <!-- start here -->
+
+    <div class="container-fluid bg-light">
       <div class="row">
-        <div class="col-11 mx-auto pt-3">
-          <!-- title -->
-          <h3 class="text-uppercase mb-4">budget app</h3>
-          <div class="row">
-            <div class="col-md-5 my-3">
-              <!-- budget feedback -->
-              <div class="budget-feedback alert alert-danger text-capitalize">
-                budget feedback
-              </div>
-              <!-- budget form -->
-              <form id="budget-form" class="budget-form">
-                <h5 class="text-capitalize">please enter your budget</h5>
-                <div class="form-group">
-                  <input
-                    type="number"
-                    class="form-control budget-inpu t"
-                    id="budget-input"
-                  />
-                </div>
-                <!-- submit button -->
-                <button
-                  type="submit"
-                  class="btn text-capitalize budget-submit"
-                  id="budget-submit"
+        <div class="col pt-4">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a href="#" class="navbar-brand">
+              <img src="img/logo.png" height="60" alt="CoolBrand" />
+            </a>
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#navbarCollapse"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav ml-auto">
+                <a href="#" class="px-4 text-uppercase nav-item nav-link"
+                  >home</a
                 >
-                  calculate
-                </button>
-              </form>
+                <a href="#" class="px-4 text-uppercase nav-item nav-link"
+                  >bikes</a
+                >
+                <a href="#" class="px-4 text-uppercase nav-item nav-link"
+                  >gear</a
+                >
+                <a href="#" class="px-4 text-uppercase nav-item nav-link"
+                  >parts</a
+                >
+                <a href="#" class="px-4 text-uppercase nav-item nav-link"
+                  >tires</a
+                >
+                <a href="#" class="px-4 text-uppercase nav-item nav-link"
+                  >service-info</a
+                >
+                <a href="#" class="px-4 text-uppercase nav-item nav-link"
+                  >catalogues</a
+                >
+                <a href="#" class="px-4 text-uppercase nav-item nav-link"
+                  >contact</a
+                >
+              </div>
+              <div class="navbar-nav ml-auto">
+                <a href="#" class="iconsHover">
+                  <i class="fas fa-search fa-2x p-2"></i
+                ></a>
+                <a href="#" class="iconsHover">
+                  <i class="fas fa-shopping-bag fa-2x p-2"></i
+                ></a>
+              </div>
             </div>
-            <div class="col-md-7">
-              <!-- app info -->
-              <div class="row my-3">
-                <div class="col-4 text-center mb-2">
-                  <h6 class="text-uppercase info-title">budget</h6>
-                  <span class="budget-icon"
-                    ><i class="fas fa-money-bill-alt"></i
-                  ></span>
-                  <h4 class="text-uppercase mt-2 budget" id="budget">
-                    <span>$ </span><span id="budget-amount">0</span>
-                  </h4>
-                </div>
-                <div class="col-4 text-center">
-                  <h6 class="text-uppercase info-title">expenses</h6>
-                  <span class="expense-icon"
-                    ><i class="far fa-credit-card"></i
-                  ></span>
-                  <h4 class="text-uppercase mt-2 expense" id="expense">
-                    <span>$ </span><span id="expense-amount">0</span>
-                  </h4>
-                </div>
-                <div class="col-4 text-center">
-                  <h6 class="text-uppercase info-title">balance</h6>
-                  <span class="balance-icon"
-                    ><i class="fas fa-dollar-sign"></i
-                  ></span>
-                  <h4 class="text-uppercase mt-2 balance" id="balance">
-                    <span>$ </span><span id="balance-amount">0</span>
-                  </h4>
+          </nav>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col py-3">
+          <h1>Bikes</h1>
+        </div>
+      </div>
+      <hr />
+      <div class="row pb-5">
+        <div class="col-2 py-4">
+          <h3>Filter by:</h3>
+          <div class="row py-3">
+            <div class="col">
+              <span>Show all</span>
+            </div>
+            <div class="col">
+              <span class="badge ml-5">0</span>
+            </div>
+          </div>
+          <hr />
+          <h5>Gender</h5>
+          <div class="row py-2">
+            <div class="col">
+              <span class="maleBtn">Male</span>
+            </div>
+            <div class="col">
+              <span class="badge ml-5">0</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <span class="femaleBtn">Female</span>
+            </div>
+            <div class="col">
+              <span class="badge ml-5">0</span>
+            </div>
+          </div>
+          <hr />
+          <h5>Brand</h5>
+          <div class="row py-1">
+            <div class="col">
+              <span class="text-uppercase legrandBtn">le grand</span>
+            </div>
+            <div class="col">
+              <span class="badge ml-5">0</span>
+            </div>
+          </div>
+          <div class="row py-1">
+            <div class="col">
+              <span class="text-uppercase krossBtn">kross</span>
+            </div>
+            <div class="col">
+              <span class="badge ml-5">0</span>
+            </div>
+          </div>
+          <div class="row py-1">
+            <div class="col">
+              <span class="text-uppercase explorerBtn">explorer</span>
+            </div>
+            <div class="col">
+              <span class="badge ml-5">0</span>
+            </div>
+          </div>
+          <div class="row py-1">
+            <div class="col">
+              <span class="text-uppercase visitorBtn">visitor</span>
+            </div>
+            <div class="col">
+              <span class="badge ml-5">0</span>
+            </div>
+          </div>
+          <div class="row py-1">
+            <div class="col">
+              <span class="text-uppercase ponyBtn">pony</span>
+            </div>
+            <div class="col">
+              <span class="badge ml-5">0</span>
+            </div>
+          </div>
+          <div class="row py-1">
+            <div class="col">
+              <span class="text-uppercase forceBtn">force</span>
+            </div>
+            <div class="col">
+              <span class="badge ml-5">0</span>
+            </div>
+          </div>
+          <div class="row py-1">
+            <div class="col">
+              <span class="text-uppercase ebikesBTN">e-bikes</span>
+            </div>
+            <div class="col">
+              <span class="badge ml-5">0</span>
+            </div>
+          </div>
+          <div class="row py-1">
+            <div class="col">
+              <span class="text-uppercase IdealBtn">IDEAL</span>
+            </div>
+            <div class="col">
+              <span class="badge ml-5">0</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 cardRow row"></div>
+      </div>
+      <div class="row footerBackgroundColor py-5">
+        <div class="col-2">
+          <div class="row">
+            <div class="col">
+              <h5 class="pb-4">Social share</h5>
+              <div class="row">
+                <div class="col">
+                  <a href="https://www.facebook.com" target="_blank"
+                    ><i class="icons fab fa-facebook-f"></i
+                  ></a>
+
+                  <a href="https://www.instagram.com/" target="_blank"
+                    ><i class="icons fab fa-instagram"></i
+                  ></a>
+
+                  <a href="https://twitter.com/?lang=en" target="_blank"
+                    ><i class="icons fab fa-twitter"></i
+                  ></a>
+
+                  <a
+                    href="https://www.linkedin.com/in/borislavpetrovic/"
+                    target="_blank"
+                    ><i class="icons fab fa-linkedin-in"></i
+                  ></a>
                 </div>
               </div>
             </div>
           </div>
-
+        </div>
+        <div class="col-10">
           <div class="row">
-            <div class="col-md-5 my-3">
-              <!-- expense feedback -->
-              <div class="expense-feedback alert alert-danger text-capitalize">
-                expense feedback
-              </div>
-              <!-- expense form -->
-              <form id="expense-form" class="expense-form">
-                <h5 class="text-capitalize">please enter your expense</h5>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control expense-input"
-                    id="expense-input"
-                  />
-                </div>
-                <h5 class="text-capitalize">please enter expense amount</h5>
-                <div class="form-group">
-                  <input
-                    type="number"
-                    class="form-control expense-input"
-                    id="amount-input"
-                  />
-                </div>
-                <!-- submit button -->
-                <button
-                  type="submit"
-                  class="btn text-capitalize expense-submit"
-                  id="expense-submit"
-                >
-                  add expense
-                </button>
-              </form>
+            <div class="col border-left">
+              <h5 class="pb-2">Event info</h5>
+              <p>Enter now</p>
+              <p>Event info</p>
+              <p>Course Maps</p>
+              <p>Race Pack</p>
+              <p>Results</p>
+              <p>FAQs</p>
+              <p>Am i Registered</p>
             </div>
-            <div class="col-md-7 tbInner d-flex my-3"></div>
+            <div class="col border-left">
+              <h5 class="pb-2">Registration</h5>
+              <p>Volunteers</p>
+              <p>Gallery</p>
+              <p>Press</p>
+              <p>Results</p>
+              <p>Privacy Policy</p>
+              <p>Service Plus</p>
+              <p>Contacts</p>
+            </div>
+            <div class="col border-left">
+              <h5 class="pb-2">Schedule</h5>
+              <p>Gallery</p>
+              <p>About</p>
+              <p>Videos</p>
+              <p>Results</p>
+              <p>FAQs</p>
+              <p>Results</p>
+              <p>Volunteers</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- jquery -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- script js -->
-    <script src="js/app.js"></script>
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
