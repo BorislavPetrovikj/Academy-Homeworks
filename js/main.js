@@ -78,11 +78,22 @@ $(function () {
     generateCard(cardData);
   });
 
-  window.onload = (event) => {
-    console.log("page is fully loaded");
-    $(".showAllBtn").css("color", "orange");
-  };
+  // window.onload = (event) => {
+  //   $(".showAllBtn").css("color", "orange");
+  // };
 
+  let adada = true;
+  $(".flex-container").click(function () {
+    if (adada == true) {
+      $(this).css("color", "orange");
+      $(this).css("font-weight", "bold");
+      adada = false;
+    } else {
+      adada = true;
+      $(this).css("color", "black");
+      $(this).css("font-weight", "normal");
+    }
+  });
   $(".showAllBtn").click(function () {
     generateCard(cardData);
   });
